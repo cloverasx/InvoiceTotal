@@ -72,9 +72,9 @@ namespace InvoiceTotal
             txtDiscountPercent.Text =           // percent format
                 discountPercent.ToString("p1"); // with 1 decimal place
             txtDiscountAmount.Text =
-                discountAmount.ToString();   // currency format
+                discountAmount.ToString("c");   // currency format
             txtTotal.Text =
-                invoiceTotal.ToString();
+                invoiceTotal.ToString("c");
 
             // move the focus to the EnterSubtotal text box and clear it
             txtEnterSubtotal.Text = "";
